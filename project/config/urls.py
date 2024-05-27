@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('producto/', include('producto.urls')),
     path('sucursales/',include('sucursales.urls')),
+    path('core/', include('core.urls')),
     #path('home/', views.probando_template)
 ]
