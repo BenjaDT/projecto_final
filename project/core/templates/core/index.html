@@ -1,14 +1,9 @@
 {% extends 'core/base.html' %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Señora vaca</title>
-</head>
-<body>
-    <h1>Bienvendio a Señora Vaca</h1>
-    <button><a href="{% url 'sucursales:index' %}"> a app sucursales</a></button>
-    <button><a href="{% url 'producto:index' %}"> a app producto</a></button>
-</body>
-</html>
+
+{% block title %}
+    Señora vaca
+{% endblock title %}
+
+{% block content %}
+    Bienvenido a Señora vaca
+{% endblock content %}

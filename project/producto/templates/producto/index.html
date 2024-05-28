@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>app producto</title>
-</head>
-<body>
-    <h1> app producto</h1>
-    <button><a href="{% url 'sucursales:index' %}"> a app sucursales</a></button>
-    <button><a href="{% url 'core:index' %}"> volver a inicio</a></button>
-</body>
-</html>
+{% extends 'core/base.html' %}
+
+{% block title %}
+    App producto
+{% endblock title %}
+
+{% block content %}
+    estos son nuestros productos
+{% endblock content %}
