@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Provedor listado
+{% endblock title %}
+
+{% block content %}
+    <h1>Listado de provedores</h1>
+    {% for provedor in Provedores %}
+        <li>{{provedor}}</li>
+    {% endfor %}
+
+    
+    <a href="{% url 'producto:provedor_crear' %}">crear provedor</a>
+{% endblock content %}
