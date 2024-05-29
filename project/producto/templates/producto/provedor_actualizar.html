@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Actualizacion de provedores
+{% endblock title %}
+
+{% block content %}
+    <h1>Actualizacion de provedores</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock content %}

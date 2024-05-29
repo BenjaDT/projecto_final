@@ -6,10 +6,17 @@
 
 {% block content %}
     <h1>Listado de provedores</h1>
+    <ul>
     {% for provedor in Provedores %}
-        <li>{{provedor}}</li>
-    {% endfor %}
+        <li>{{provedor}}
+            
+            <a href="{% url 'producto:provedor_detalle' provedor.id %}">Detalle</a>
+            <a href="{% url 'producto:provedor_actualizar' provedor.id %}">Actualizar</a>
+            <a href="{% url 'producto:provedor_eliminar' provedor.id %}">Eliminar</a>
+        </li>
 
+    {% endfor %}
+    </ul>
     
     <a href="{% url 'producto:provedor_crear' %}">crear provedor</a>
 {% endblock content %}

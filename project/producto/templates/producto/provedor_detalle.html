@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Provedor vista en detalle
+{% endblock title %}
+
+{% block content %}
+    <ul>
+        <li>Nombre: {{provedor.nombre}}</li>
+        <li>Numero de contacto: {{provedor.contacto}}</li>
+    </ul>
+
+    
+    <a href="{% url 'producto:provedor_listar' %}">Listado de provedores</a>
+{% endblock content %}
