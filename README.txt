@@ -21,7 +21,8 @@ sitio
 
 home
 	productos
-		crud(if admin)
+		provedores crud(if admin)
+		productos crud(if admin)
 	sucursales
 		sucursal 1( ensenada)
 		sucursal 2 (moron)

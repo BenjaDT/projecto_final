@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Señora vaca
+{% endblock title %}
+
+{% block content %}
+    Login
+
+    <form action="" method='post'>
+        {% csrf_token %}
+        <table>
+        {{form.as_table}}
+        <input type="hidden" name="next" value="{%url 'core:index'%}">
+        
+        </table>
+        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+        <a href="{% url 'core:index' %}">Volver a inicio</a>
+    </form>
+{% endblock content %}
