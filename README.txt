@@ -1,3 +1,17 @@
+Pagina web hecha con python django creada para los almacenes de Señora vaca y como projecto final de coderhouse 2024
+
+me falta
+	 hacer el CRUD de productos 
+	 creacion de perfiles de usuario
+	 que el administrador pueda subir una foto
+	 el video
+	 embelleser y ordenar el html
+
+
+
+
+
+
 clases
 
 productos
@@ -28,7 +42,4 @@ home
 		sucursal 2 (moron)
 		sucursal 3 (ituzaingo)
 		sucursal 4 (laferrere)
-	
-	Mercado municipal de ensenada, mercado municipal de moron, mercado municipal de ituzaingo, mercado municipal de laferrere
-		
 	
