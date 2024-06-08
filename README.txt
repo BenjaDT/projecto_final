@@ -2,8 +2,8 @@ Pagina web hecha con python django creada para los almacenes de Señora vaca y c
 
 me falta
 	 hacer el CRUD de productos 
-	 creacion de perfiles de usuario
-	 que el administrador pueda subir una foto
+	 creacion de perfiles de usuario  HECHO
+	 que el administrador pueda subir una foto HECHO
 	 el video
 	 embelleser y ordenar el html
 
