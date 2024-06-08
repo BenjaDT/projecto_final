@@ -30,6 +30,7 @@
                             <li class="nav-item"><a class="nav-link" href=''>About</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'producto:index' %}">Productos</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'sucursales:index' %}">Sucursales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'core:imagen' %}">Imagenes</a></li>
                             {% if user.is_authenticated %}
                                 <form action="{% url 'core:logout' %}" method="post">
                                     {% csrf_token %}

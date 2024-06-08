@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponse
 from django.contrib.auth.views import LoginView, LogoutView
-from .forms import CustomAuthenticationForm ,CustomUserCreationForm
-
+from .forms import CustomAuthenticationForm ,CustomUserCreationForm, ImageForm
+from .models import Image
 # Create your views here.
 
 def index(request):
@@ -24,3 +24,14 @@ def register(request: HttpRequest) -> HttpResponse:
     return render(request,'core/register', {'form' : form})
 
 
+def imagen(request):
+    if request.method == "POST":
+        form=ImageForm(data=request.POST,files=request.FILES)
+        if form.is_valid():
+            form.save()
+            obj=form.instance
+            return render(request,"core/imagen.html",{"obj":obj})
+    else:    
+        form=ImageForm()
+    img=Image.objects.all()
+    return render(request,"core/imagen.html",{"img":img,"form":form})
